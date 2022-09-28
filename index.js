@@ -20,8 +20,12 @@ async function startApolloServer(typeDefs, resolvers) {
        // By default, apollo-server hosts its GraphQL endpoint at the
        // server root. However, *other* Apollo Server packages host it at
        // /graphql. Optionally provide this to match apollo-server.
-       path: '/'
+       path: '/graphql'
     });
+
+    app.get('/', (request, response) => {
+      response.send('Hello, GraphQL!')
+    })
   
     // Modified server startup
     await new Promise(resolve => app.listen({ port: 4000 }, resolve));
