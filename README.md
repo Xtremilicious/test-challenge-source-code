@@ -1,7 +1,7 @@
 # How to Run!
 
 1. Download the source code.
-2. Open up a terminal on the downloaded directory (The root directory which has the index.js and schema.js)
+2. Open up a terminal on the downloaded directory (The root directory which have the `index.js` and `schema.js`)
 3. `npm install && npm start`
 
 Server will be ready at http://localhost:4000
